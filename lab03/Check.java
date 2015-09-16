@@ -10,7 +10,7 @@
 //      java Check//
 import java.util.Scanner;
 //      define a class
-public class Check{
+public class Check{ //would not allow me to have Cookies as public class
         //main method required for every Java program 
         public static void main(String[] args) {
         Scanner myScanner = new Scanner( System.in );
