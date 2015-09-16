@@ -5,6 +5,21 @@
 //      java Test//
 //define a class
 public class Test{
-// add main method    
-    public static void main(String[] args){
-    
+// My Main Method
+public static void main(String[] args) {
+	int amount = 10,
+	if (amount < 20) {
+	    System.out.println("Enter nuber L greater than $20"),
+	} 
+	else {
+	    System.out.println("Please take your money"),
+	}
+	
+}
+}
+
+            
+
+ 
+
+
