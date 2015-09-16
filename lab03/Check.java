@@ -5,12 +5,12 @@
 //CSE 02
 //The purpose of this lab is to design a program that uses the Scanner class to obtain from the user the original cost of the check, the percentage tip the friends wish to pay and the number of ways the check will be split. This program will also determine how much each person in the group needs to spend in order to pay the check.
 //first compile the program
-//      javac Cookies.java
+//      javac Check.java
 //run the program
-//      java Cookies//
+//      java Check//
 import java.util.Scanner;
 //      define a class
-public class Cookies{
+public class Check{
         //main method required for every Java program 
         public static void main(String[] args) {
         Scanner myScanner = new Scanner( System.in );
