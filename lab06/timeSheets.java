@@ -15,14 +15,18 @@ public class timeSheets{
         System.out.print("Enter number of employee timesheets: ");
         double numEmp = myScanner.nextDouble();
         double totalpay = 0;
+        
         for(int i = 0; i < numEmp; i++) {
             double totalhours = 0;
             System.out.print("Enter pay for employees: ");
             double numPay = myScanner.nextDouble();
-            for(int j = 0; j < 5; j++) {
+            
+        for(int j = 0; j < 5; j++) {
             System.out.print("Enter number of hours: ");
+            
             totalhours = (totalhours + numEmp);
-            }
+            
+        }
             totalpay = totalpay + (numPay * totalhours);
         }
         System.out.println("The total payroll is " + totalpay);
