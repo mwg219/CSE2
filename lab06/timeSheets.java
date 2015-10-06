@@ -12,23 +12,32 @@ import java.util.Scanner;
 public class timeSheets{
     public static void main(String[] args) {
         Scanner myScanner = new Scanner(System.in);
-        System.out.print("Enter number of employee timesheets: ");
-        double numEmp = myScanner.nextDouble();
-        double totalpay = 0;
         
-        for(int i = 0; i < numEmp; i++) {
-            double totalhours = 0;
-            System.out.print("Enter pay for employees: ");
-            double numPay = myScanner.nextDouble();
+        int totalhours = 0;//initializing variable for hours.
+        
+        System.out.print("Enter number of employee timesheets: "); //prompts user to enter amount of employee timesheets.
+        int numEmp = myScanner.nextInt(); 
+        System.out.print("Enter pay for employees: ");//prompts user to enter pay for employees.
+        int numPay = myScanner.nextInt();
+        
+        for(int i = 0; i < numEmp; i++) { //this for loop runs for amount of of employee timesheets entered. 
             
-        for(int j = 0; j < 5; j++) {
-            System.out.print("Enter number of hours: ");
+            System.out.print("Enter hours worked on Monday: ");//prompts user for hours worked on Monday.
+            int monHours = myScanner.nextInt();
+            System.out.print("Enter hours worked on Tuesday: ");//prompts user for hours worked on Tuesday.
+            int tuesHours = myScanner.nextInt();
+            System.out.print("Enter hours worked on Wednesday: ");//prompts user for hours worked on Wednesday.
+            int wednHours = myScanner.nextInt();
+            System.out.print("Enter hours worked on Thursday: ");//prompts user for hours worked on Thursday.
+            int thursHours = myScanner.nextInt();
+            System.out.print("Enter hours worked on Friday: ");///prompts user for hours worked on Friday.
+            int fridHours = myScanner.nextInt();
             
-            totalhours = (totalhours + numEmp);
+         totalhours = (numPay * (monHours + tuesHours + wednHours + thursHours + fridHours));//calculates the total hours worked 
             
         }
-            totalpay = totalpay + (numPay * totalhours);
-        }
+           int totalpay = (numEmp * totalhours);//calculates total payroll for employees.
+        
         System.out.println("The total payroll is " + totalpay);
     }
 }
