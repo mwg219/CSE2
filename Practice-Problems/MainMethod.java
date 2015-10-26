@@ -2,24 +2,32 @@
 //  javac MainMethod.java//
 //run the program
 //  java MainMethod//
-
+import java.util.Scanner;
 public class MainMethod {
-    public static void hw() {
-        System.out.println("Hello World!");
-    }
-    public static void add(int a, int b) {
-        //System.out.println("add = " + (a+b) );
-        int c;
-        c = a + b;
-        return c;
-    }
-    public static boolean 
-    public static void main(String[] args) {
-        System.out.println("Hello");
-        hw();
-        int x;
-        x = add(3, 8);
-        System.out.println("add = " + x);
-        
-    }
+    
+  public int MultiDigit(int a, int b){
+
+if(int a >= 0 && int b >= 0) {
+int M;
+M = a*(b*factorial(b-1));
+return M;
+
+}
+
+else{
+
+return 0;
+
+}
+}
+public static void main(String[] args){
+    System.out.print("Enter first integer: ");
+    int a = myScanner.nextInt();
+    System.out.print("Enter second integer: ");
+    int b = myScanner.nextInt();
+    
+    int M;
+    M = MultiDigit(a, b);
+    System.out.println("The product = " + M);
+}
 }
