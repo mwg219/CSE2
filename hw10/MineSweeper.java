@@ -21,6 +21,17 @@ public class MineSweeper{
   place(M);
   Nonplace();
     }
+    public static String view(){
+    String Board = "";
+    for(int row = 0; row < N; row++){
+        String seeRow = "";
+        for(int column = 0; column < N; column++){
+            seeRow += "[" + arrayN[row][column] + "]";
+        }
+        Board += seeRow + "\n";
+    }
+    return Board;
+}
     
   public static void place(int number){
       int Mplaced = 0;
@@ -60,16 +71,6 @@ public static int adjacentCells(int A, int B){
 }
 return adjM;
 }
-public static String view(){
-    String Board = "";
-    for(int row = 0; row < N; row++){
-        String seeRow = "";
-        for(int column = 0; column < N; column++){
-            seeRow += "[" + arrayN[row][column] + "]";
-        }
-        Board += seeRow + "\n";
-    }
-    return Board;
-}
+
 }
 
